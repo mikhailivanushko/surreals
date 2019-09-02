@@ -8,6 +8,7 @@ using namespace surreals;
 int main() {
 
     std::function<SurrealInf(int)> const naturals = [](int inp) {
+        std::cout << "naturals called with n = " << inp << std::endl;
         return SurrealInf(Surreal(inp));
     };
 
@@ -46,4 +47,8 @@ int main() {
     SurrealInf epsilon = SurrealInf(nullptr, fracs, std::make_pair(0,-1));
     std::cout << "printing Epsilon.." << std::endl;
     std::cout << epsilon.Print(5, 1) << std::endl;
+
+    SurrealInf omega_plus_one = SurrealInf( [omega](int) { return omega; }, nullptr, std::make_pair(1, 0));
+    std::cout << "printing Omega + 1 .." << std::endl;
+    std::cout << omega_plus_one.Print(5, 1) << std::endl;
 }

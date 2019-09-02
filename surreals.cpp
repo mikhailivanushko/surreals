@@ -1,3 +1,7 @@
+///
+/// Implementations for functions of Surreal and SurrealInf classes.
+///
+
 #include "surreals.h"
 
 namespace surreals {
@@ -629,7 +633,7 @@ namespace surreals {
         }
         tempstr += "}";
         return tempstr;
-    };
+    }
 
     /// Hybrid display
     /// Prints the number using brackets and separators, shortening the children to floats after a set depth.
@@ -661,7 +665,7 @@ namespace surreals {
 
         tempstr += "}";
         return tempstr;
-    };
+    }
 
     /// "Infinite" Surreals
 

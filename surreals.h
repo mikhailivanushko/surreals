@@ -1,3 +1,13 @@
+///
+/// An implementation of Surreal numbers with some basic functionality
+/// Includes classes:
+///     Surreal - a class representing surreal numbers with finite sets.
+///         Has comparison and ordering, arithmetic, conversion to and from int and float, verbose and short display.
+///
+///     SurrealInf - a class representing surreal numbers with possibility for infinite sets.
+///         Currently only has constructions and display.
+///
+
 #ifndef SURREALS_SURREALS_H
 #define SURREALS_SURREALS_H
 
@@ -69,7 +79,7 @@ namespace surreals {
         /// float conversion
         float Float() const;
 
-        operator float();
+        explicit operator float();
 
         /// verbose display
         std::string PrintVerbose() const;

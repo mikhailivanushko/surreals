@@ -1,2 +1,4 @@
 
-build/CMakeCache.txt
+build/*
+!build/libsurreals.a
+.idea/*
